@@ -1,0 +1,19 @@
+:root {
+  /* Component tokens */
+  --main-body-color: #272727;
+  --handle-height: 3rem;
+
+  --md-slider-handle-shape: var(--handle-height);
+  --md-slider-handle-height: var(--handle-height);
+  --md-slider-handle-width: calc(var(--handle-height) / 11);
+
+  --md-slider-active-track-height: calc(var(--handle-height) / 2);
+  --md-slider-inactive-track-height: calc(var(--handle-height) / 2);
+
+  --md-slider-with-tick-marks-container-size: calc(var(--handle-height) / 10);
+  --md-slider-hover-state-layer-opacity: 0;
+  --md-slider-pressed-state-layer-opacity: 0;
+
+  --md-slider-handle-elevation-shadow: none;
+}
+
