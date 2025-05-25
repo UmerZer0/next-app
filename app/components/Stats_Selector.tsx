@@ -17,6 +17,7 @@ const Stats_Selector = ({
   min = "0", // Slider min
   max = "70000", // Slider max
   step = "1000", // Slider step
+  suffix = "",
 }) => {
   const [statValue, setStatValue] = useState(() =>
     formatValue(initialValue.toString())
@@ -227,10 +228,7 @@ const Stats_Selector = ({
   };
 
   return (
-    <div
-      className="text-white p-6 rounded-lg w-full"
-      style={{ backgroundColor: "#272727" }}
-    >
+    <div className="text-white p-6 rounded-lg w-full bg-neutral-800">
       <div className="flex justify-between items-center mb-4 ml-2">
         <div className="text-4xl">{label}</div>
         <div
@@ -244,6 +242,7 @@ const Stats_Selector = ({
           // Initial content is set by statValue state
         >
           {statValue}
+          {suffix}
         </div>
       </div>
 

@@ -1,13 +1,12 @@
 import Image from "next/image";
 import Stats_Selector from "./components/Stats_Selector";
+import Weapon_Selector from "./components/Weapon_Selector";
 
 export default function Home() {
   return (
     <>
-      <div className="min-h-screen bg-gray-100 p-6">
+      <div className=" bg-neutral-900">
         <div className="max-w-md mx-auto">
-          <h1 className="text-2xl font-bold mb-6">Character Stats</h1>
-
           <Stats_Selector
             label={
               <>
@@ -76,7 +75,10 @@ export default function Home() {
             min="50"
             max="450"
             step="1"
+            suffix="%"
           />
+
+          <Weapon_Selector />
 
           {/* You could add more stat displays here */}
         </div>
